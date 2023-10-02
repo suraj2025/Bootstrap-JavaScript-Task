@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <style>
+        .body{
+            width: fit-content;
+            background:linear-gradient(rgba(235, 235, 113, 0.674),rgba(242, 143, 161, 0.838));
+            padding-left: 120px;
+            padding-right: 120px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <div class="body py-4 mt-5">
+        <p class="mb-4 text-primary fs-5"><b>Registration Form</b></p>
+        <table>
+            <tr>
+                <td class="text-end pe-2">First Name</td>
+                <td><input class="mt-1 form-control" type="text" size="35"></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td class="text-end pe-2">Last Name</td>
+                <td><input class="mt-1 form-control" type="text" size="35"></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td class="text-end pe-2">Email</td>
+                <td><input class="mt-1 form-control" type="email" name="" id="" size="35"></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td class="text-end pe-2">Password</td>
+                <td><input class="mt-1 form-control" type="password" name="" id="" size="35"></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td class="text-end pe-2">Re-enter Password</td>
+                <td><input class="mt-1 form-control" type="password" name="" id="" size="35"></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td class="text-end pe-2">Gender</td>
+                <td><input type="radio"><label for="male">male</label><br><input type="radio"><label for="female">female</label></td>
+                <td></td>
+            </tr>
+            <tr>
+                <td class="text-end pe-2">Age</td>
+                <td><input class="form-control" type="number" name="" id="" size="35"></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td class="text-end pe-2">Phone Number</td>
+                <td><input class="mt-1 form-control" type="tel" name="" id="" size="35"></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td class="text-end pe-2">Address</td>
+                <td><textarea class="form-control mt-1" name="" id="" cols="30" rows="3"></textarea></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td class="text-end pe-2">State</td>
+                <td><input class="mt-1 form-control" type="text" size="35"></td>
+                <td><p></p></td>
+            </tr>
+            <tr>
+                <td class="text-end pe-2">Country</td>
+                <td ><select class="form-control" name="" id="">
+                    <option value="">choose your country</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td class="text-end pe-2">Language known</td>
+                <td><input class="my-2 " type="checkbox" name="" id=""><label for="">English</label><input class="ms-2" type="checkbox" name="" id=""><label for="">Kannada</label><input class="ms-2" type="checkbox" name="" id=""><label for="">Hindi</label><input class="ms-2" type="checkbox" name="" id=""><label for="">Telegu</label></td>
+            </tr>
+            <tr>
+                <td colspan="2"><input class="mt-1" type="checkbox" name="" id="">Hereby I declare all the given details are true</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="text-end mt-1">Log in to <a href="">Ethunus</a> website</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="text-center"><button onclick="validate()" class="text-light rounded-5 px-4 bg-danger mt-2 border-1">REGISTER</button></td>
+            </tr>
+        </table>
+        </div>
+    </center>
+    <script src="task8.js"></script>
+</body>
+</html>

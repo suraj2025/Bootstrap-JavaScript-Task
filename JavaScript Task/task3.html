@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{
+            background-color: rgba(128, 162, 162, 0.597);
+        }
+        .container{
+            /* border: 1px solid; */
+            border-radius:5px;
+            width: 300px;
+            margin: auto;
+            margin-top: 100px;
+            /* background-color: rgb(30, 167, 167);  */
+            background: linear-gradient(yellow,orange,pink,rgb(209, 54, 209),rgb(107, 107, 216));
+            padding: 5px;
+            
+        }
+        .box{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 8px;
+         
+        }
+        button{
+            margin-top: 10px;
+        }
+        .btn-1{
+            background-color: rgb(182, 198, 35);
+            border: none;
+        }
+        .btn-2{
+            background-color: rgb(213, 142, 20);
+            margin-left: 15px;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container border-1">
+            <div class="box">
+
+                <div class="col-1"><label for="num1">First Number:</label></div>
+                <div class="col-2"><input type="number" id="num1" value=""><br /></div>
+                <div class="col-1"><label for="num2">Second Number:</label></div>
+                <div class="col-2"><input type="number" id="num2"><br /></div>
+            </div>
+            <button class="btn-1" onclick="Multiply()">Multiply</button>
+            <button class="btn-2" onclick="Divide()">Divide</button>
+        <p>The Result is : </p>
+        <p id="result"></p>
+    </div>
+    <script src="task3.js"></script>
+</body>
+</html>
